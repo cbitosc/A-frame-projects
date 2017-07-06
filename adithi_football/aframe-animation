@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+     <a-sphere position="-3.764 1.802 -5.030" radius="1.5" color="#fbedef"><a-animation attribute="position" to="-7.247 1.454 -9.550" direction="alternate" dur="2000"repeat="indefinite"></a-animation></a-sphere>
+	<a-sphere position="-3.303 2.725 -3.766" radius=".5" color="#0a0305"><a-animation attribute="position" to="0 4.159 0.074" direction="alternate" dur="2000"repeat="indefinite"></a-animation></a-sphere>
+	<a-sphere position="-2.528 2.715 -4.442" radius=".5" color="#0a0305"><a-animation attribute="position" to="1.746 4.970 0" direction="alternate" dur="2000"repeat="indefinite"></a-animation></a-sphere>
+      <a-cone position="-3.727 4.523 -5.041" radius-bottom="1.000" radius-top="0.100" height="2.5" color="#ff8549"></a-cone>
+      <a-plane position="-3.101 -3.501 -6.664" rotation="-90 0 0" width="9" height="9" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+	<a-text position="10 5 6"value="its snow time!"></a-text>
+		<a-cone rotation="90 45 0" position="-2.215 2.177 -3.349" radius-bottom=".25000" radius-top="0.100" height="1.5" color="#ff8549"></a-cone>
+	<a-cylinder position="-2.927 -1.904 -5.224" radius="0.5" height=".75" color="#FFC65D"><a-animation attribute="position" to="0 -2.024 -1.654" direction="alternate" dur="2000"repeat="indefinite"></a-animation></a-cylinder>
+		<a-cylinder position="-4.170 -1.998 -4.027" radius="0.5" height=".75" color="#FFC65D"><a-animation attribute="position" to="0 -2.174 0.341" direction="alternate" dur="2000"repeat="indefinite"></a-animation></a-cylinder>
+
+	<a-box src="#boxTexture" position="-3.604 -0.630 -4.820" rotation="0 0 0" scale="2 2 2"><a-animation attribute="position" to="0 -0.630 -2.820" direction="alternate" dur="2000"repeat="indefinite"></a-animation></a-box>
+   	<a-camera position="2.141 -0.101 -0.886"></a-camera>
+
+   </a-scene>
+  </body>
+</html>
