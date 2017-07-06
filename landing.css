@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Lato';
-	src: local('☺'), url('/fonts/Lato-Light.ttf') format('truetype'), url('/fonts/Lato-Medium.ttf') format('truetype'), url('/fonts/Lato-Regular.ttf') format('truetype'), url('/fonts/Lato-Thin.svg') format('truetype');
+	src: local('☺'), url('fonts/Lato-Light.ttf') format('truetype'), url('fonts/Lato-Medium.ttf') format('truetype'), url('fonts/Lato-Regular.ttf') format('truetype'), url('fonts/Lato-Thin.tff') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     font-weight: bold;
 }
 
