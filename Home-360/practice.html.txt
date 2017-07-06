@@ -1,0 +1,295 @@
+<html>
+  
+<head>
+  
+  <script src="aframe.min.js">
+</script>
+
+  </head>
+ 
+ <body>
+ 
+ <a-scene>
+
+	  <a-assets>
+    
+<audio id="room" src="audio.mp3" preload="auto">
+</audio>
+</a-assets>
+ 
+ <a-entity sound="src: #room">
+</a-entity>
+	
+<a-text value="Portokali" position="-1 2 -5" color="#000000">
+</a-text>
+	
+<a-assets>
+<img id="clock" src="c.jpg">
+</a-assets>
+
+	
+<a-assets-item id="bed" src="bed.mtl">
+</a-assets-item>
+   
+	<a-assets-item id="bed1" src="bed.obj">
+</a-assets-item>
+   
+    <a-entity obj-model="mtl:#bed; obj:#bed1" position="26.45 -0.8 -0.54" rotation="0 0 0" scale="2 2 2" color="#040405">   
+     
+    </a-entity> 
+ 
+	<a-assets-item id="table" src="table.mtl">
+</a-assets-item>
+   	
+<a-assets-item id="table1" src="table.obj">
+</a-assets-item>
+       
+<a-entity obj-model="mtl:#table; obj:#table1" position="12.42 -0.17 -3.43" scale="3 3 3">
+</a-entity>
+
+    
+   <a-assets-item id="book" src="book.mtl">
+</a-assets-item>
+
+   	<a-assets-item id="book1" src="book.obj">
+</a-assets-item>
+
+       <a-entity obj-model="mtl:#book; obj:#book1" position="11.2 1.536 -0.47" rotation="0 270 0" scale="0.01 0.01 0.01">
+</a-entity> 
+ 
+   	<a-assets-item id="sofa" src="sofa.mtl">
+</a-assets-item>
+   
+	<a-assets-item id="sofa1" src="sofa1.obj">
+</a-assets-item>
+     
+  <a-entity obj-model="mtl:#sofa; obj:#sofa1" position="9.792 -0.95 -3.67" rotation="0 270 0" scale="0.25 0.22 0.22">
+</a-entity>  
+ <a-assets-item id="books" src="books.mtl">
+</a-assets-item>
+
+   	<a-assets-item id="books1" src="books.obj">
+</a-assets-item>
+
+       <a-entity obj-model="mtl:#books; obj:#books1" position="12.194 1.050 -5.25" rotation="0 180 0" scale="5 5 5">
+</a-entity>
+
+<a-assets-item id="chair" src="chair.mtl">
+</a-assets-item>
+
+   	<a-assets-item id="chair1" src="chair.obj">
+</a-assets-item>
+
+       <a-entity obj-model="mtl:#chair; obj:#chair1" position="14.07 -1.394 -1.83" rotation="0 160 0" scale="0.04 0.04 0.04">
+
+       <a-assets-item id="book" src="book.mtl">
+</a-assets-item>
+
+</a-entity>  
+  
+  
+<a-assets-item id="city" src="city.mtl">
+</a-assets-item>
+
+   	<a-assets-item id="city1" src="city.obj">
+</a-assets-item>
+
+       <a-entity obj-model="mtl:#city; obj:#city1" position="-24.635 -3.506 142.698" rotation="0 7 0" scale="200 200 200" color="#040405">   
+     
+    </a-entity>
+     <a-assets-item id="human" src="human.mtl">
+</a-assets-item>
+   	
+<a-assets-item id="human1" src="human.obj">
+</a-assets-item>
+    
+   <a-entity obj-model="mtl:#human; obj:#human1"  position="-7.08 -1.45 -3" rotation="0 90 0" scale="2.5 2.5 2.5" color="#040405"0>
+
+	<a-animation
+ attribute="position"
+ to="15 -1.45 7.150"
+	repeat="indefinite"
+ dur="21600"
+	> 
+</a-animation>
+        
+ </a-entity>
+ <a-assets-item id="tv" src="tv.mtl">
+</a-assets-item>
+   	
+<a-assets-item id="tv1" src="tv.obj">
+</a-assets-item>
+    
+   <a-entity obj-model="mtl:#tv; obj:#tv1" position="-8.94 -0.59 4.129" rotation="0 0 0" scale="0.5 0.5 0.5" color="#040405">
+        
+    </a-entity
+
+   
+ <a-entity>
+   
+    <a-circle src="#clock" position="0 2 -5" radius="2"> 
+   
+     <a-entity id="HourHand">
+	 
+       <a-cylinder radius="0.03" position="0 0.4 0" height="0.8" rotation="0 0 0" color=#000000>
+</a-cylinder>
+
+	        <a-cone position="0 1 0" radius-bottom="0.04" radius-top="0" height="0.5"  rotation="0 0 0" color="#000000">
+ 
+      </a-cone>
+		
+<a-animation attribute="rotation"
+ to="0 0 -360"
+	repeat="indefinite"
+ dur="216000000">
+</a-animation>
+	
+</a-entity>
+	
+ <a-entity id="MinHand">
+
+	        <a-cylinder radius="0.01" position="0 -0.4 0" height="0.8" rotatiom="0 0 90" color=#000000>
+</a-cylinder>
+	    
+    <a-cone position="0 -0.9 0" radius-bottom="0.03" radius-top="0" height="0.3"  rotation="0 0 -180" color="#000000">
+   
+    </a-cone>
+
+<a-animation
+ attribute="rotation"
+  to="0 0 -360"
+ repeat="indefinite"
+ dur="3600000"
+ >
+</a-animation>
+
+
+</a-entity>
+	
+ <a-entity id="SecHand">
+	
+        <a-cylinder radius="0.01" position="0.4 0 0" height="0.8" color=#000000 rotation="0 0 -90">
+</a-cylinder>
+	    
+    <a-cone position="0.8 0 0" radius-bottom="0.03" radius-top="0" height="0.2"  rotation="0 0 -90" color="#000000">
+ 
+      </a-cone>
+<a-animation
+ attribute="rotation"
+  to="0 0 -360"
+   repeat="indefinite"
+  dur="60000"
+ >
+</a-animation>
+
+
+	</a-entity>
+ 
+</a-circle>
+	
+</a-entity>
+
+
+<a-entity position="0 5 6">
+
+ <a-sphere color="#9A2600" position="0 3.5 -5" rotation="90 0 90" radius="1">
+ 
+          <a-box color="#4C1200" position="0 2 0" scale="0.5 3 0.5">
+</a-box>
+     
+      <a-box color="#4C1200" position="0 -2 0" scale="0.5 3 0.5">
+</a-box>
+   
+        <a-box color="#4C1200" position="2 0 0"  scale="3 0.5 0.5">
+</a-box>
+          
+ <a-box color="#4C1200" position="-2 0 0"  scale="3 0.5 0.5">
+</a-box>
+      
+     <a-animation attribute="rotation" to="0 0 10000000" dur="200000" repeat="indefinite">
+</a-animation>
+   
+     </a-sphere>
+
+</a-entity>
+
+	<a-assets>
+<img id="wall4" src="floor.jpeg">
+</a-assets>
+	
+	<a-plane color="#004d80" position="0.394 3.2 -5.39" height="10.5" width="20">
+
+</a-plane>  
+   <a-plane src"#wall4" position="0.361 8.311 4.557" rotation="90 90 90" height="20" width="20">
+</a-plane>
+	        
+<a-plane color="#99ddff" position="11.3 3.45 -1.44" rotation="0 90 0"height="9.8" width="8" side="double">
+</a-plane>
+	    
+   <a-plane color="#99ddff" position="11.30 6.83 4.54" rotation="0 90 0"height="3" width="4" side="double">
+</a-plane>
+		
+<a-plane color="#99ddff" position="11.3 3.474 10.5" rotation="0 90 0"height="9.8" width="8" side="double">
+</a-plane>
+		
+ <a-plane color="#99ddff" position="-9.46 3.45 4.601" rotation="0 90 0"height="9.65" width="20" side="double">
+</a-plane> 
+	
+        <a-plane src="#wall4" position="0.434 -1.4 4.583" rotation="-90 -90 -90" height="20" width="20" side="double">
+</a-plane>     
+
+	<a-assets>
+<img id="main" src="main.jpg">
+</a-assets>		
+
+	<a-plane src="#main" position="1.513 3.424 14.63" rotation="0 0 0"height="9.65" width="22" side="double">
+</a-plane>
+ 
+<a-entity position="0 5 6">
+
+ <a-sphere color="#734739" position="20 3.5 -5" rotation="90 0 90" radius="1">
+   
+        <a-box color="#ffc4b2" position="0 2 0" scale="0.5 3 0.5">
+</a-box>
+        
+   <a-box color="#ffc4b2" position="0 -2 0" scale="0.5 3 0.5">
+</a-box>
+      
+     <a-box color="#ffc4b2" position="2 0 0" scale="3 0.5 0.5">
+</a-box>
+         
+  <a-box color="#ffc4b2" position="-2 0 0" scale="3 0.5 0.5">
+</a-box>
+         
+  <a-animation attribute="rotation" to="0 0 10000000" dur="900000" repeat="indefinite">
+</a-animation>
+      
+  </a-sphere>
+
+</a-entity>
+	
+<a-assets>
+<img id="wall4" src="wall.jpg">
+</a-assets>
+	      
+  <a-plane color="#004d80" position="20.394 3.2 -5.39" height="10.5" width="20">
+</a-plane>
+	  
+      <a-plane src"#wall4" position="20.361 8.311 4.557" rotation="90 90 90" height="20" width="20">
+</a-plane>
+	  
+      <a-plane color="#99ddff" position="30.34 3.45 4.53" rotation="0 90 0"height="9.8" width="20" side="double">
+</a-plane>
+	       
+ <a-plane src="#wall4" position="20.434 -1.4 4.583" rotation="-90 -90 -90" height="20" width="20" side="double">
+</a-plane>
+		
+<a-plane color="#a3918a" position="21.38 3.470 14.61" rotation="0 0 0"height="9.65" width="18" side="double">
+</a-plane> 
+	
+	<a-assets>
+
+  
+</body>
+
+</html>
